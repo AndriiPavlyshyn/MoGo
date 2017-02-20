@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 body {
   background-color: #fff; }
@@ -52,7 +52,6 @@ a:focus {
   text-align: center;
   margin: 0.7% 0 6.6% 0;
   font-size: 1.1em;
-  font-family: "Montserrat", sans-serif;
   color: #adadad; }
 
 .line {
@@ -92,13 +91,14 @@ a:focus {
 .sw-topper,
 .sw-bottom,
 .sw-footer {
-  position: relative;
   width: 25px;
-    width-height: 1px;
+  position: relative;
   background: white;
-    background-border: none;
-    background-border-radius: 4px 4px 4px 4px;
-  display: block; }
+  display: block;
+  height: 1px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  border: none; }
 
 .sw-topper {
   top: -10px;
@@ -114,6 +114,13 @@ a:focus {
 
 .navigation {
   position: absolute;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   top: 3%;
   right: 22%;
   z-index: 9999;
@@ -123,9 +130,7 @@ a:focus {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
-    display-flex-flow: row wrap;
-    display-justify-content: flex-end; }
+  display: flex; }
   .navigation ul {
     margin: 0;
     padding: 0; }
@@ -371,8 +376,7 @@ a:focus {
 .services-block p {
   width: 90%;
   margin: 0 0 9% 16%;
-  color: #999999;
-  font-family: "Montserrat", sans-serif; }
+  color: #999999; }
 
 .flex-box {
   width: 100%;
@@ -565,9 +569,8 @@ a .item-list {
 
 .panel-body {
   border-top: 1px solid #e2e2e2;
-  font-family: "Montserrat", sans-serif;
   color: #999999;
-  font-size: 0.9em;
+  font-size: 1em;
   font-style: italic;
   text-align: left;
   padding: 15px;
@@ -621,9 +624,8 @@ a .item-list {
 .citaiton p {
   display: block;
   color: #999999;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-style: italic;
-  font-family: "Montserrat", sans-serif;
   line-height: 30px;
   text-align: left; }
 
